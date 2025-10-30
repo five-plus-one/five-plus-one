@@ -8,8 +8,8 @@
 
 ### Find Me Online
 
-- 🏠 个人主页：[https://r-l.ink/home](https://r-l.ink/home)
-- 📝 技术博客：[http://r-l.ink/blog](http://r-l.ink/blog)
+- 🏠 主页：[https://r-l.ink/home](https://r-l.ink/home)
+- 📝 博客：[http://r-l.ink/blog](http://r-l.ink/blog)
 - 💬 联系我：[https://r-l.ink/about](https://r-l.ink/about)
 - 📫 邮件：[5plus1@five-plus-one.com](http://r-l.ink/mail)
 
