@@ -2,20 +2,20 @@
 
 ### About Me
 
-- 🎓 河海大学大一新生，计算机专业
-- 💻 热爱编程与技术探索
-- 🌱 持续学习中...
+- 🎓 Computer Science student at Hohai University
+- 💻 Passionate about programming and technology exploration
+- 🌱 Continuously learning...
 
 ### Find Me Online
 
-- 🏠 主页：[https://r-l.ink/home](https://r-l.ink/home)
-- 📝 博客：[http://r-l.ink/blog](http://r-l.ink/blog)
-- 💬 联系我：[https://r-l.ink/about](https://r-l.ink/about)
-- 📫 邮件：[5plus1@five-plus-one.com](http://r-l.ink/mail)
+- 🏠 Homepage: [https://r-l.ink/home](https://r-l.ink/home)
+- 📝 Blog: [http://r-l.ink/blog](http://r-l.ink/blog)
+- 💬 Contact: [https://r-l.ink/about](https://r-l.ink/about)
+- 📫 Email: [5plus1@five-plus-one.com](http://r-l.ink/mail)
 
 ### Support Me
 
-如果觉得我的项目对你有帮助，欢迎支持我一杯咖啡 ☕
+If you find my projects helpful, feel free to buy me a coffee ☕
 
 [![Support Me](https://img.shields.io/badge/Support%20Me-Buy%20Me%20A%20Coffee-orange)](https://r-l.ink/support)
 
