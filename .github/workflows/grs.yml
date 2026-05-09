@@ -1,0 +1,137 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&theme=github_dark
+          path: profile/stats_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&theme=default
+          path: profile/stats_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=github_dark
+          path: profile/top-langs_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=default
+          path: profile/top-langs_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # AI-Marker-Suite
+      - name: Generate AI-Marker-Suite card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite&hide_border=true&theme=github_dark
+          path: profile/pinned-AI-Marker-Suite_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate AI-Marker-Suite card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite&hide_border=true&theme=default
+          path: profile/pinned-AI-Marker-Suite_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # HoHai110 Frontend
+      - name: Generate HoHai110_frontend card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=HoHai110_frontend&hide_border=true&theme=github_dark
+          path: profile/pinned-HoHai110-frontend_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate HoHai110_frontend card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=HoHai110_frontend&hide_border=true&theme=default
+          path: profile/pinned-HoHai110-frontend_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # HoHai110 Backend
+      - name: Generate HoHai110_backend card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=HoHai110_backend&hide_border=true&theme=github_dark
+          path: profile/pinned-HoHai110-backend_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate HoHai110_backend card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=HoHai110_backend&hide_border=true&theme=default
+          path: profile/pinned-HoHai110-backend_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # five-plus-one.github.io
+      - name: Generate five-plus-one.github.io card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=five-plus-one.github.io&hide_border=true&theme=github_dark
+          path: profile/pinned-five-plus-one-github-io_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate five-plus-one.github.io card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=five-plus-one.github.io&hide_border=true&theme=default
+          path: profile/pinned-five-plus-one-github-io_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Cardan
+      - name: Generate Cardan card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Cardan&hide_border=true&theme=github_dark
+          path: profile/pinned-Cardan_dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Cardan card (light)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Cardan&hide_border=true&theme=default
+          path: profile/pinned-Cardan_light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
