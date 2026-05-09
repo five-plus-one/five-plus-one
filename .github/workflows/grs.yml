@@ -5,6 +5,9 @@ on:
     - cron: "0 3 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate stats card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&theme=github_dark
@@ -20,7 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate stats card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&theme=default
@@ -28,7 +31,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=github_dark
@@ -36,7 +39,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=default
@@ -45,7 +48,7 @@ jobs:
 
       # AI-Marker-Suite
       - name: Generate AI-Marker-Suite card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite&hide_border=true&theme=github_dark
@@ -53,7 +56,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate AI-Marker-Suite card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite&hide_border=true&theme=default
@@ -62,7 +65,7 @@ jobs:
 
       # HoHai110 Frontend
       - name: Generate HoHai110_frontend card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=HoHai110_frontend&hide_border=true&theme=github_dark
@@ -70,7 +73,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate HoHai110_frontend card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=HoHai110_frontend&hide_border=true&theme=default
@@ -79,7 +82,7 @@ jobs:
 
       # HoHai110 Backend
       - name: Generate HoHai110_backend card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=HoHai110_backend&hide_border=true&theme=github_dark
@@ -87,7 +90,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate HoHai110_backend card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=HoHai110_backend&hide_border=true&theme=default
@@ -96,7 +99,7 @@ jobs:
 
       # five-plus-one.github.io
       - name: Generate five-plus-one.github.io card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=five-plus-one.github.io&hide_border=true&theme=github_dark
@@ -104,7 +107,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate five-plus-one.github.io card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=five-plus-one.github.io&hide_border=true&theme=default
@@ -113,7 +116,7 @@ jobs:
 
       # Cardan
       - name: Generate Cardan card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=Cardan&hide_border=true&theme=github_dark
@@ -121,7 +124,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Cardan card (light)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v1
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=Cardan&hide_border=true&theme=default
