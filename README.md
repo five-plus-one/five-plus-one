@@ -43,9 +43,21 @@ If you find my projects helpful, feel free to buy me a coffee ☕
   </picture>
 </a>
 
-AI 自动批改助手 — 支持智学网、七天网络等阅卷平台。自动识别手写答案、智能评分、自动填分提交。
+AI 阅卷自动批改助手 — 支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷等平台。自动识别手写答案、智能评分、自动填分提交。支持普通/试改/无人值守三种模式，分小题评分，分数纠错自动优化提示词，评阅历史导出。
 
 **Tech**: JavaScript · AI · Automation
+
+<a href="https://github.com/five-plus-one/AI-Marker-Suite-Docs">
+  <picture>
+    <source srcset="./profile/pinned-AI-Marker-Suite-Docs_dark.svg" media="(prefers-color-scheme: dark)" />
+    <source srcset="./profile/pinned-AI-Marker-Suite-Docs_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <img src="./profile/pinned-AI-Marker-Suite-Docs_light.svg" alt="AI-Marker-Suite-Docs" />
+  </picture>
+</a>
+
+AI 自动批改助手文档站 — 使用指南、配置说明与常见问题解答
+
+**Tech**: CSS · Documentation
 
 ## 🎓 University Projects
 
@@ -73,19 +85,33 @@ AI 自动批改助手 — 支持智学网、七天网络等阅卷平台。自动
 
 **Tech**: JavaScript · Node.js
 
-## 🌐 Web & Visualization
+## 🔬 Competition & Research
 
-<a href="https://github.com/five-plus-one/five-plus-one.github.io">
+<a href="https://github.com/five-plus-one/ZhiXueMatrix">
   <picture>
-    <source srcset="./profile/pinned-five-plus-one-github-io_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-five-plus-one-github-io_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-five-plus-one-github-io_light.svg" alt="five-plus-one.github.io" />
+    <source srcset="./profile/pinned-ZhiXueMatrix_dark.svg" media="(prefers-color-scheme: dark)" />
+    <source srcset="./profile/pinned-ZhiXueMatrix_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <img src="./profile/pinned-ZhiXueMatrix_light.svg" alt="ZhiXueMatrix" />
   </picture>
 </a>
 
-个人主页 — 基于 GitHub Pages 的个人网站
+第十五届中国软件杯大赛 A3 赛题参赛作品
 
-**Tech**: HTML · CSS · JavaScript
+**Tech**: Python
+
+<a href="https://github.com/five-plus-one/EduAgent">
+  <picture>
+    <source srcset="./profile/pinned-EduAgent_dark.svg" media="(prefers-color-scheme: dark)" />
+    <source srcset="./profile/pinned-EduAgent_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <img src="./profile/pinned-EduAgent_light.svg" alt="EduAgent" />
+  </picture>
+</a>
+
+第十七届中国大学生服务外包创新创业大赛东部区域赛二等奖作品
+
+**Tech**: TypeScript
+
+## 🌐 Web & Visualization
 
 <a href="https://github.com/five-plus-one/Cardan">
   <picture>
