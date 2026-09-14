@@ -28,25 +28,25 @@ jobs:
           - { theme: dark,  theme_name: github_dark, card: top-langs, out: top-langs, opts: "layout=compact&langs_count=6&hide_border=true" }
           - { theme: light, theme_name: default,     card: top-langs, out: top-langs, opts: "layout=compact&langs_count=6&hide_border=true" }
           # ---- featured pin ----
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-AI-Marker-Suite, opts: "repo=AI-Marker-Suite&hide_border=true&title_bold=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-AI-Marker-Suite, opts: "repo=AI-Marker-Suite&hide_border=true&title_bold=true" }
-          # ---- project pins ----
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-GravityLink, opts: "repo=GravityLink&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-GravityLink, opts: "repo=GravityLink&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-SimpleHomepage, opts: "repo=SimpleHomepage&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-SimpleHomepage, opts: "repo=SimpleHomepage&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-HoHai110-frontend, opts: "repo=HoHai110_frontend&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-HoHai110-frontend, opts: "repo=HoHai110_frontend&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-HoHai110-backend, opts: "repo=HoHai110_backend&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-HoHai110-backend, opts: "repo=HoHai110_backend&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-ZhiXueMatrix, opts: "repo=ZhiXueMatrix&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-ZhiXueMatrix, opts: "repo=ZhiXueMatrix&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-EduAgent, opts: "repo=EduAgent&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-EduAgent, opts: "repo=EduAgent&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-Cardan, opts: "repo=Cardan&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-Cardan, opts: "repo=Cardan&hide_border=true" }
-          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-Pyrojewel, opts: "repo=Pyrojewel&hide_border=true" }
-          - { theme: light, theme_name: default,     card: pin, out: pinned-Pyrojewel, opts: "repo=Pyrojewel&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-AI-Marker-Suite, opts: "repo=AI-Marker-Suite&hide_border=true&hide_description=true&title_bold=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-AI-Marker-Suite, opts: "repo=AI-Marker-Suite&hide_border=true&hide_description=true&title_bold=true" }
+          # ---- project pins（hide_description 保证双列等高）----
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-GravityLink, opts: "repo=GravityLink&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-GravityLink, opts: "repo=GravityLink&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-SimpleHomepage, opts: "repo=SimpleHomepage&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-SimpleHomepage, opts: "repo=SimpleHomepage&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-HoHai110-frontend, opts: "repo=HoHai110_frontend&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-HoHai110-frontend, opts: "repo=HoHai110_frontend&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-HoHai110-backend, opts: "repo=HoHai110_backend&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-HoHai110-backend, opts: "repo=HoHai110_backend&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-ZhiXueMatrix, opts: "repo=ZhiXueMatrix&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-ZhiXueMatrix, opts: "repo=ZhiXueMatrix&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-EduAgent, opts: "repo=EduAgent&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-EduAgent, opts: "repo=EduAgent&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-Cardan, opts: "repo=Cardan&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-Cardan, opts: "repo=Cardan&hide_border=true&hide_description=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-Pyrojewel, opts: "repo=Pyrojewel&hide_border=true&hide_description=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-Pyrojewel, opts: "repo=Pyrojewel&hide_border=true&hide_description=true" }
     steps:
       - uses: actions/checkout@v4
 
