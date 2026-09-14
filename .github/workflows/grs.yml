@@ -13,162 +13,67 @@ on:
 permissions:
   contents: write
 
+# 新增项目：在 matrix.include 的 pin 里加一行即可（dark / light 各一行）
 jobs:
-  build:
+  generate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # ---- stats ----
+          - { theme: dark,  theme_name: github_dark, card: stats,     out: stats,     opts: "show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile" }
+          - { theme: light, theme_name: default,     card: stats,     out: stats,     opts: "show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile" }
+          # ---- top languages ----
+          - { theme: dark,  theme_name: github_dark, card: top-langs, out: top-langs, opts: "layout=compact&langs_count=6&hide_border=true" }
+          - { theme: light, theme_name: default,     card: top-langs, out: top-langs, opts: "layout=compact&langs_count=6&hide_border=true" }
+          # ---- featured pin ----
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-AI-Marker-Suite, opts: "repo=AI-Marker-Suite&hide_border=true&title_bold=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-AI-Marker-Suite, opts: "repo=AI-Marker-Suite&hide_border=true&title_bold=true" }
+          # ---- project pins ----
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-GravityLink, opts: "repo=GravityLink&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-GravityLink, opts: "repo=GravityLink&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-SimpleHomepage, opts: "repo=SimpleHomepage&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-SimpleHomepage, opts: "repo=SimpleHomepage&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-HoHai110-frontend, opts: "repo=HoHai110_frontend&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-HoHai110-frontend, opts: "repo=HoHai110_frontend&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-HoHai110-backend, opts: "repo=HoHai110_backend&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-HoHai110-backend, opts: "repo=HoHai110_backend&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-ZhiXueMatrix, opts: "repo=ZhiXueMatrix&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-ZhiXueMatrix, opts: "repo=ZhiXueMatrix&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-EduAgent, opts: "repo=EduAgent&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-EduAgent, opts: "repo=EduAgent&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-Cardan, opts: "repo=Cardan&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-Cardan, opts: "repo=Cardan&hide_border=true" }
+          - { theme: dark,  theme_name: github_dark, card: pin, out: pinned-Pyrojewel, opts: "repo=Pyrojewel&hide_border=true" }
+          - { theme: light, theme_name: default,     card: pin, out: pinned-Pyrojewel, opts: "repo=Pyrojewel&hide_border=true" }
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate ${{ matrix.out }}_${{ matrix.theme }}
+        uses: stats-organization/github-readme-stats-action@v1
+        with:
+          card: ${{ matrix.card }}
+          options: username=${{ github.repository_owner }}&${{ matrix.opts }}&theme=${{ matrix.theme_name }}
+          path: profile/${{ matrix.out }}_${{ matrix.theme }}.svg
+          token: ${{ secrets.GH_TOKEN }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: card-${{ matrix.out }}-${{ matrix.theme }}
+          path: profile/${{ matrix.out }}_${{ matrix.theme }}.svg
+          if-no-files-found: error
+
+  commit:
+    needs: generate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate stats card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
+      - uses: actions/download-artifact@v4
         with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&theme=github_dark
-          path: profile/stats_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate stats card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&theme=default
-          path: profile/stats_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate top languages card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=github_dark
-          path: profile/top-langs_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate top languages card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=default
-          path: profile/top-langs_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # AI-Marker-Suite
-      - name: Generate AI-Marker-Suite card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite&hide_border=true&theme=github_dark
-          path: profile/pinned-AI-Marker-Suite_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate AI-Marker-Suite card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite&hide_border=true&theme=default
-          path: profile/pinned-AI-Marker-Suite_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # AI-Marker-Suite-Docs
-      - name: Generate AI-Marker-Suite-Docs card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite-Docs&hide_border=true&theme=github_dark
-          path: profile/pinned-AI-Marker-Suite-Docs_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate AI-Marker-Suite-Docs card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=AI-Marker-Suite-Docs&hide_border=true&theme=default
-          path: profile/pinned-AI-Marker-Suite-Docs_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # HoHai110 Frontend
-      - name: Generate HoHai110_frontend card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=HoHai110_frontend&hide_border=true&theme=github_dark
-          path: profile/pinned-HoHai110-frontend_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate HoHai110_frontend card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=HoHai110_frontend&hide_border=true&theme=default
-          path: profile/pinned-HoHai110-frontend_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # HoHai110 Backend
-      - name: Generate HoHai110_backend card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=HoHai110_backend&hide_border=true&theme=github_dark
-          path: profile/pinned-HoHai110-backend_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate HoHai110_backend card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=HoHai110_backend&hide_border=true&theme=default
-          path: profile/pinned-HoHai110-backend_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # ZhiXueMatrix
-      - name: Generate ZhiXueMatrix card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=ZhiXueMatrix&hide_border=true&theme=github_dark
-          path: profile/pinned-ZhiXueMatrix_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate ZhiXueMatrix card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=ZhiXueMatrix&hide_border=true&theme=default
-          path: profile/pinned-ZhiXueMatrix_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # EduAgent
-      - name: Generate EduAgent card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=EduAgent&hide_border=true&theme=github_dark
-          path: profile/pinned-EduAgent_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate EduAgent card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=EduAgent&hide_border=true&theme=default
-          path: profile/pinned-EduAgent_light.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      # Cardan
-      - name: Generate Cardan card (dark)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=Cardan&hide_border=true&theme=github_dark
-          path: profile/pinned-Cardan_dark.svg
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Generate Cardan card (light)
-        uses: stats-organization/github-readme-stats-action@v1
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=Cardan&hide_border=true&theme=default
-          path: profile/pinned-Cardan_light.svg
-          token: ${{ secrets.GH_TOKEN }}
+          path: profile
+          merge-multiple: true
 
       - name: Commit cards
         run: |

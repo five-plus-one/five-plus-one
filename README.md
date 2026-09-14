@@ -1,39 +1,22 @@
-## Hi there, I'm 5+1 👋
+<div align="center">
 
-### About Me
+# 五加一 5+1
 
-- 🎓 Computer Science student at Hohai University
-- 💻 Passionate about programming and technology exploration
-- 🌱 Continuously learning...
+**世界不死，理想不灭。**
+*The world endures, and ideals never fade.*
 
-### Find Me Online
+河海大学计算机在读 · 中国江苏
+CS undergrad at Hohai University · Jiangsu, China
 
-- 🏠 Homepage: [https://r-l.ink/home](https://r-l.ink/home)
-- 📝 Blog: [http://r-l.ink/blog](http://r-l.ink/blog)
-- 💬 Contact: [https://r-l.ink/about](https://r-l.ink/about)
-- 📫 Email: [5plus1@five-plus-one.com](http://r-l.ink/mail)
+[主页 Home](https://r-l.ink/home) · [博客 Blog](http://r-l.ink/blog) · [关于 About](https://r-l.ink/about) · [邮件 Mail](http://r-l.ink/mail)
 
-### Support Me
-
-If you find my projects helpful, feel free to buy me a coffee ☕
-
-[![Support Me](https://img.shields.io/badge/Support%20Me-Buy%20Me%20A%20Coffee-orange)](https://r-l.ink/support)
+</div>
 
 ---
 
-<picture>
-  <source srcset="./profile/stats_dark.svg" media="(prefers-color-scheme: dark)" />
-  <source srcset="./profile/stats_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-  <img src="./profile/stats_light.svg" alt="Stats" />
-</picture>
+## Featured
 
-<picture>
-  <source srcset="./profile/top-langs_dark.svg" media="(prefers-color-scheme: dark)" />
-  <source srcset="./profile/top-langs_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-  <img src="./profile/top-langs_light.svg" alt="Top Languages" />
-</picture>
-
-## 🤖 AI & Automation
+<div align="center">
 
 <a href="https://github.com/five-plus-one/AI-Marker-Suite">
   <picture>
@@ -43,84 +26,159 @@ If you find my projects helpful, feel free to buy me a coffee ☕
   </picture>
 </a>
 
-AI 阅卷自动批改助手 — 支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷等平台。自动识别手写答案、智能评分、自动填分提交。支持普通/试改/无人值守三种模式，分小题评分，分数纠错自动优化提示词，评阅历史导出。
+</div>
 
-**Tech**: JavaScript · AI · Automation
+**AI 阅卷自动批改助手** — 支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷等平台。自动识别手写答案、智能评分、自动填分提交。支持普通 / 试改 / 无人值守三种模式，分小题评分，分数纠错自动优化提示词，评阅历史导出。挂机睡觉，醒来改完。
 
-<a href="https://github.com/five-plus-one/AI-Marker-Suite-Docs">
-  <picture>
-    <source srcset="./profile/pinned-AI-Marker-Suite-Docs_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-AI-Marker-Suite-Docs_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-AI-Marker-Suite-Docs_light.svg" alt="AI-Marker-Suite-Docs" />
-  </picture>
-</a>
+*AI-powered exam grading assistant for major Chinese e-marking platforms — handwriting recognition, per-question scoring, auto-submit, and unattended overnight runs.*
 
-AI 自动批改助手文档站 — 使用指南、配置说明与常见问题解答
+**Tech**: JavaScript · AI · Automation  
+**Docs**: [AI-Marker-Suite-Docs](https://github.com/five-plus-one/AI-Marker-Suite-Docs) · ⭐ 53
 
-**Tech**: CSS · Documentation
+---
 
-## 🎓 University Projects
+## Stats
 
-<a href="https://github.com/five-plus-one/HoHai110_frontend">
-  <picture>
-    <source srcset="./profile/pinned-HoHai110-frontend_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-HoHai110-frontend_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-HoHai110-frontend_light.svg" alt="HoHai110 Frontend" />
-  </picture>
-</a>
+<div align="center">
 
-河海大学110周年校庆交互式纪念网站 — 现代化技术栈构建的前端应用
+<picture>
+  <source srcset="./profile/stats_dark.svg" media="(prefers-color-scheme: dark)" />
+  <source srcset="./profile/stats_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+  <img src="./profile/stats_light.svg" alt="GitHub Stats" />
+</picture>
+<picture>
+  <source srcset="./profile/top-langs_dark.svg" media="(prefers-color-scheme: dark)" />
+  <source srcset="./profile/top-langs_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+  <img src="./profile/top-langs_light.svg" alt="Top Languages" />
+</picture>
 
-**Tech**: Vue · JavaScript
+</div>
 
-<a href="https://github.com/five-plus-one/HoHai110_backend">
-  <picture>
-    <source srcset="./profile/pinned-HoHai110-backend_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-HoHai110-backend_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-HoHai110-backend_light.svg" alt="HoHai110 Backend" />
-  </picture>
-</a>
+---
 
-河海大学110周年校庆网站 — 后端 API 服务
+## Projects
 
-**Tech**: JavaScript · Node.js
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/GravityLink">
+        <picture>
+          <source srcset="./profile/pinned-GravityLink_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-GravityLink_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-GravityLink_light.svg" alt="GravityLink" width="420" />
+        </picture>
+      </a>
+      <br />
+      私有化短链与活码管理系统 · Go + Vue 3
+      <br />
+      <em>Self-hosted short-link & QR routing platform</em>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/SimpleHomepage">
+        <picture>
+          <source srcset="./profile/pinned-SimpleHomepage_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-SimpleHomepage_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-SimpleHomepage_light.svg" alt="SimpleHomepage" width="420" />
+        </picture>
+      </a>
+      <br />
+      大道至简 · 个人静态主页生成器
+      <br />
+      <em>Minimal static homepage generator</em>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/HoHai110_frontend">
+        <picture>
+          <source srcset="./profile/pinned-HoHai110-frontend_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-HoHai110-frontend_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-HoHai110-frontend_light.svg" alt="HoHai110 Frontend" width="420" />
+        </picture>
+      </a>
+      <br />
+      河海大学 110 周年校庆纪念网站 · Vue
+      <br />
+      <em>HHU 110th anniversary interactive site</em>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/HoHai110_backend">
+        <picture>
+          <source srcset="./profile/pinned-HoHai110-backend_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-HoHai110-backend_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-HoHai110-backend_light.svg" alt="HoHai110 Backend" width="420" />
+        </picture>
+      </a>
+      <br />
+      校庆网站后端 API · Node.js
+      <br />
+      <em>Backend API for the anniversary site</em>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/ZhiXueMatrix">
+        <picture>
+          <source srcset="./profile/pinned-ZhiXueMatrix_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-ZhiXueMatrix_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-ZhiXueMatrix_light.svg" alt="ZhiXueMatrix" width="420" />
+        </picture>
+      </a>
+      <br />
+      中国软件杯 A3 赛题参赛作品 · Python
+      <br />
+      <em>China Software Cup A3 entry</em>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/EduAgent">
+        <picture>
+          <source srcset="./profile/pinned-EduAgent_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-EduAgent_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-EduAgent_light.svg" alt="EduAgent" width="420" />
+        </picture>
+      </a>
+      <br />
+      服务外包创新创业大赛 · 东部赛区二等奖
+      <br />
+      <em>Service Outsourcing Innovation Contest · 2nd prize</em>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/Cardan">
+        <picture>
+          <source srcset="./profile/pinned-Cardan_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-Cardan_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-Cardan_light.svg" alt="Cardan" width="420" />
+        </picture>
+      </a>
+      <br />
+      卡尔丹圆运动学可视化与深度推导
+      <br />
+      <em>Cardan circle kinematics visualization</em>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/five-plus-one/Pyrojewel">
+        <picture>
+          <source srcset="./profile/pinned-Pyrojewel_dark.svg" media="(prefers-color-scheme: dark)" />
+          <source srcset="./profile/pinned-Pyrojewel_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+          <img src="./profile/pinned-Pyrojewel_light.svg" alt="Pyrojewel" width="420" />
+        </picture>
+      </a>
+      <br />
+      有些话，说不出口，便写成了代码
+      <br />
+      <em>Some words become code</em>
+    </td>
+  </tr>
+</table>
 
-## 🔬 Competition & Research
+---
 
-<a href="https://github.com/five-plus-one/ZhiXueMatrix">
-  <picture>
-    <source srcset="./profile/pinned-ZhiXueMatrix_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-ZhiXueMatrix_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-ZhiXueMatrix_light.svg" alt="ZhiXueMatrix" />
-  </picture>
-</a>
+<div align="center">
 
-第十五届中国软件杯大赛 A3 赛题参赛作品
+If you find my projects helpful, feel free to [buy me a coffee](https://r-l.ink/support) ☕
 
-**Tech**: Python
+[![Support Me](https://img.shields.io/badge/Support%20Me-Buy%20Me%20A%20Coffee-orange)](https://r-l.ink/support)
 
-<a href="https://github.com/five-plus-one/EduAgent">
-  <picture>
-    <source srcset="./profile/pinned-EduAgent_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-EduAgent_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-EduAgent_light.svg" alt="EduAgent" />
-  </picture>
-</a>
-
-第十七届中国大学生服务外包创新创业大赛东部区域赛二等奖作品
-
-**Tech**: TypeScript
-
-## 🌐 Web & Visualization
-
-<a href="https://github.com/five-plus-one/Cardan">
-  <picture>
-    <source srcset="./profile/pinned-Cardan_dark.svg" media="(prefers-color-scheme: dark)" />
-    <source srcset="./profile/pinned-Cardan_light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-    <img src="./profile/pinned-Cardan_light.svg" alt="Cardan" />
-  </picture>
-</a>
-
-卡尔丹圆运动学可视化与深度推导 — 物理仿真与交互式可视化
-
-**Tech**: HTML · JavaScript · Physics
+</div>
