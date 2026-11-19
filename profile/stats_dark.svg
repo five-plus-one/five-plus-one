@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">&#20116;&#21152;&#19968;5plus1's GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 241, Total Commits  : 3180, Total PRs: 502, Total Issues: 234, Contributed to (last year): 2</desc>
+        <desc id="descId">Total Stars Earned: 243, Total Commits  : 3223, Total PRs: 511, Total Issues: 266, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 25.83249506659769;
+        stroke-dashoffset: 25.572768989097295;
       }
     }
   
@@ -146,7 +146,7 @@
           Top
         </text>
         <text x="-5" y="12" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="percentile-rank-value" class="rank-percentile-text">
-          10.3%
+          10.2%
         </text>
       
         </g>
@@ -165,7 +165,7 @@
         x="219.01"
         y="12.5"
         data-testid="stars"
-      >241</text>
+      >243</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -195,7 +195,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >502</text>
+      >511</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -210,7 +210,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >234</text>
+      >266</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
